@@ -43,7 +43,7 @@ This project uses a local Roboflow Inference server to detect hand gestures to t
 - Run the robot:
   - `python palm_detection.py`
 - Put your palms out and see if it works. There will be some lag. The print statements will tell you if there is delay in fetching the
-- inference return, or if the object detection just isn't working.
+inference return, or if the object detection just isn't working.
 
 ## Performance Improvements
 - This could be a good candidate for a Raspberry Pi cluster. This could be split up into several nodes, e.g.:
