@@ -11,6 +11,6 @@ time.sleep(2)
 
 
 for i in range(5): # Update range to number of pictures desired per run
-    image_path = "IMAGE/PATH/"+str(uuid.uuid4()) + ".jpg"
+    image_path = "IMAGE/PATH/"+str(uuid.uuid4()) + ".jpg" # Update IMAGE/PATH
     picam2.capture_file(image_path)
     time.sleep(1)

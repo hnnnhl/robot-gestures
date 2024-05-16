@@ -10,7 +10,6 @@ ROBOFLOW_API_KEY="aBfIRAFiL2x92BabVixf"
 ROBOFLOW_API_VERSION=1
 ROBOFLOW_WORKSPACE="workspace-bdfjh"
 ROBOFLOW_PROJECT="robot-gesture"
-IMAGE_FOLDER="images/"
 
 class Robot:
     def __init__(self):
@@ -54,7 +53,7 @@ class Robot:
 
         while True:
             print('Taking picture')
-            image_path = IMAGE_FOLDER + "temp.jpg"
+            image_path = "temp.jpg"
             self.picam2.capture_file(image_path)
             print('Getting predictions')
             result = self.model.predict(image_path, confidence=70, overlap=30)
@@ -67,7 +66,7 @@ class Robot:
                 if prediction['class'].lower() == 'palm':
                     count += 1
 
-            if count == 2:
+            if count == 2: # Robot only moves if 2 palms are detected
                 if self.t is None or not self.t.is_alive():
                     self.t = threading.Thread(target=self.move_forward)
                     self.t.start()
