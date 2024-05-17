@@ -28,6 +28,8 @@ This project uses a local Roboflow Inference server to detect hand gestures to t
 - Pull down this repo on the Raspberry Pi.
   - Install global packages:
     - `sudo apt install -y python3-picamera2 python3-libcamera`
+    - `curl -fsSL https://get.docker.com -o get-docker.sh`
+    - `sudo sh get-docker.sh`
   - In the project directory:
     - Setup the virtual environment:
       - `python3 -m venv --system-site-packages venv`
