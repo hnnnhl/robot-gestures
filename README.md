@@ -14,7 +14,7 @@ This project uses a local Roboflow Inference server to detect hand gestures to t
     
 ### Robot 
 - Follow Freenove instructions to setup the robot ([docs](https://github.com/Freenove/Freenove_Big_Hexapod_Robot_Kit_for_Raspberry_Pi/blob/master/Tutorial.pdf))
-  - The robot files were taken directly from Freenove's repository [here](https://github.com/Freenove/Freenove_Big_Hexapod_Robot_Kit_for_Raspberry_Pi/tree/master/Code/Server).
+  - The robot files in this repo were taken directly from Freenove's repository [here](https://github.com/Freenove/Freenove_Big_Hexapod_Robot_Kit_for_Raspberry_Pi/tree/master/Code/Server).
   Look for the latest updates for these files there:
     - Command.py
     - Control.py
