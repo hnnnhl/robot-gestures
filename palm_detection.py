@@ -1,10 +1,7 @@
 import threading
 from Control import *
-import os
-import json
 from roboflow import Roboflow
 from picamera2 import Picamera2, Preview
-import time
 
 ROBOFLOW_API_KEY="aBfIRAFiL2x92BabVixf"
 ROBOFLOW_API_VERSION=1
