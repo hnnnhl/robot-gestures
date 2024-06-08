@@ -41,7 +41,7 @@ This project uses a local Roboflow Inference server to detect hand gestures to t
 - Start the local inference server:
   - `sudo docker run -it --rm -p 9001:9001 roboflow/roboflow-inference-server-arm-cpu`
 - In this project directory, ensure the virtual environment is activated:
-  - `python3 -m venv --system-site-packages venv`
+  - `source venv/bin/activate`
 - Run the robot:
   - `python palm_detection.py`
 - Put your palms out and see if it works. There will be some lag. The print statements will tell you if there is delay in fetching the
